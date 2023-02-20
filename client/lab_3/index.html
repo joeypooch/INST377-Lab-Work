@@ -1,5 +1,53 @@
-<!--
-    Replace this with your working code from Lab 2, and include:
-    - The styles in this folder's `style.css`
-    - The script in script.js, which should be included via a `<script src="script.js" >` call before your closing </body> tag 
--->
+<html lang="en" class = 'html'>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Joe Puchalla's Labs For INST377</title>
+        
+    </head>
+
+<body onload="updateSlidePosition()">
+    
+    <ul id="my-array"></ul>
+    <div id="wrapper" class = 'wrapper'>
+        <header class = 'header'><b><h1 class = 'h1'>Joe Puchalla's Labs For INST377</h1></b></header>
+        <div id="container"class="container">
+            <div id="left" class="box left_section">
+                <h2 class='h2'><b>Album Names:</b></h2>
+                <div id="album list" class="box">
+                    1. J.I.D- The Forever Story<br>
+                    2. learn 2 swim- redveil <br>
+                    3. Wish You Were Here- Pink Floyd <br>
+                    4. Speak Now- Taylor Swift<br>
+                    5. Ye- Kanye West 
+                </div>
+               
+            </div>
+            <div id="right" class="box right_section">
+                <h2 class='h2'><b>Image Carousel:</b></h2>
+                <div id="imgs" class="carousel">
+                    <button id = "pv"class="prev">Previous</button>
+                    <div id="slides" class="carousel slides">
+                        <img src="./images/capy.jpg" class="img carousel_item "/>
+                        <img src="./images/capy2.jpg" class="img carousel_item "/>
+                        <img src="./images/capy3.jpg" class="img carousel_item "/>
+                        <img src="./images/capy4.jpg" class="img carousel_item "/>
+                    </div>
+                    <button id="nx" class="next">Next</button>
+                </div>
+                <div id ="desc" class="box">
+                    Capybaras are fun, here are a few pics of them lol
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <footer class = "footer">
+        JOEYPOOCH <a class="a a:hover" href="https://github.com/joeypooch/INST377-Lab-Work">https://github.com/joeypooch/INST377-Lab-Work</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
