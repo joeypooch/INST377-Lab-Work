@@ -149,7 +149,7 @@ form input {
 
 /* How To Write A Media Query For Small Screens */
 
-@media only screen and (max-width: 736px){
+@media only screen and (max-width: 737px){
     /* Rules in here will only apply when a screen is the correct size */
     /* check it out by using your developer tools to shrink your screen-size */
     .wrapper{
