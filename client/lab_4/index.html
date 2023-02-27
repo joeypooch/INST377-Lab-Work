@@ -1,3 +1,53 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joe Puchalla INST377 Lab 4</title>
+    </head>
+
+    <body>
+        <div id="header" class='header'>
+            <h1 id="headcontent" class='h1'>Joe Puchalla's Labs For INST377</h1>
+        </div>
+        <div id = "wrapper" class = "wrapper">
+            <div id="left-section" class="left">
+                
+                    <h2 id="sectionheader" class="form label">
+                        Form Inputs
+                    </h2>
+                
+                <div id = "inputs" class="internal">
+                    
+                    <form action="https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json" method="GET">
+                        <label for="restaurant">Restaurant Name:</label>
+                        <input type="text" id="resto" class="form input" >
+                        <button id = "submit"class="button">Submit</button>
+                    </form>
+                    
+                </div>
+
+            </div>
+            <div id="right-section" class="right">
+                <div id ="Header">
+                    <h2 id="sectionheader" class="form label">
+                        Local Restaurants
+                    </h2>
+                </div>
+                <div id="list" class="internal">
+                    A list of restaurants from an API
+                </div>
+            </div>
+        </div>
+        
+        <footer class = "footer">
+            JOEYPOOCH <a class="a a:hover" href="https://github.com/joeypooch/INST377-Lab-Work">REPO</a>
+        </footer>
+    </body>
+</html>
+
+
 <!-- Bring in your successful HTML/CSS from the Flexbox lab -->
 <!-- Try typing 'doc' at the top of this file and pressing "tab" -->
 <!-- if your development environment is set up correctly -->
