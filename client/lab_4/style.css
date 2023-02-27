@@ -69,7 +69,7 @@ body {
 .internal {
   
   display: flex;
-  flex-direction: column; /* display items vertically */
+  flex-direction: column; 
   align-items: flex-start;
   justify-content: space-evenly;
   
@@ -79,14 +79,14 @@ body {
 
 .header {
   
-  top: 0; /* position it at the top of the page */
-  left: 0; /* position it at the left of the page */
-  width: 100%; /* make it full-width */
+  top: 0; 
+  left: 0; 
+  width: 100%; 
 }
 
 .header h1 {
   display: block;
-  /* this will push other blocks out of the way */
+ 
 
   /* colors */
   background-color: rgba(13, 116, 23, 0.8);
@@ -96,7 +96,7 @@ body {
   border-radius: 6px;
   font-size: 1.5rem;
   padding: 1.25rem;
-  margin:0; /* removing the margin on h1 tags means the header pins to the top if we move */
+  margin:0; 
   
 }
 .footer {
@@ -200,14 +200,13 @@ form input {
     }
     .header {
   
-      top: 0; /* position it at the top of the page */
-      left: 0; /* position it at the left of the page */
-      width: 100%; /* make it full-width */
-    }
+      top: 0; 
+      left: 0; 
+      width: 100%; 
     
     .header h1 {
       display: block;
-      /* this will push other blocks out of the way */
+      
     
       /* colors */
       background-color: rgba(13, 116, 23, 0.8);
