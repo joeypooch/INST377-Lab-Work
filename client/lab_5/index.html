@@ -3,3 +3,55 @@
 <!-- If you open /routes/apiRoutes and go to line 38 you will find the server side answer to your request! -->
 
 <!-- Temporarily unhook your script.js file from your main index file -->
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joe Puchalla INST377 Lab 5</title>
+    </head>
+
+    <body>
+        <div id="header" class='header'>
+            <h1 id="headcontent" class='h1'>Joe Puchalla's Labs For INST377</h1>
+        </div>
+        <div id = "wrapper" class = "wrapper">
+            <div id="left-section" class="left">
+                
+                    <h2 id="sectionheader" class="form label">
+                        Form Inputs
+                    </h2>
+                
+                <div id = "inputs" class="internal">
+                    <form action="/api" class="main_form">
+                        <label for="resto">Restaurant Name</label>
+                        <input type = "text" name= "resto" id = "resto"/>
+                        <button id ="submit"type="submit">Filter Data</button>
+                        <button type="button">Load Data</button>
+                        
+                    </form>
+
+                    
+                </div>
+
+            </div>
+            <div id="right-section" class="right">
+                <div id ="Header">
+                    <h2 id="sectionheader" class="form label">
+                        Local Restaurants
+                    </h2>
+                </div>
+                <div id="list" class="internal">
+                    A list of restaurants from an API
+                </div>
+            </div>
+         <footer class = "footer">
+            JOEYPOOCH <a class="a a:hover" href="https://github.com/joeypooch/INST377-Lab-Work">REPO</a>
+        </footer>
+        </div>
+        
+    <script src="./script.js"></script>
+    </body>
+</html>
+
