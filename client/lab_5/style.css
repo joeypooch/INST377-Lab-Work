@@ -1,3 +1,241 @@
 /* CSS instructions for Lab 5 */
 /* Bring in your successful CSS from week 4 */
 /* In your #map rule, set map to display:none; to temporarily hide your map box */
+
+
+html {
+    background-color: #ffffff;
+    font-size: 16px;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  
+    /* these are specific to different browsers */
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: rgb(239, 239, 239);
+  }
+  .map	{
+    display: none;
+    }
+  .left {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+    padding-bottom:2.5rem;
+    padding-top: .5rem;
+    
+    
+    margin-left: 2.5%;
+    margin-top: 1rem;
+    border-style: dotted;
+  }
+  .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+    padding-bottom:2.5rem;
+    padding-top: .5rem;
+    flex:1;
+    border-style: dotted;
+    
+  
+    margin-top: 1rem;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+  .wrapper {
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    flex: 1;
+    
+    align-items: flex-start;
+  }
+  .internal {
+    
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+    border-style: dashed;
+    padding:1.5rem;
+  }
+  
+  .header {
+    
+    top: 0; 
+    left: 0; 
+    width: 100%;
+  }
+  
+  .header h1 {
+    display: block;
+    /* this will push other blocks out of the way */
+  
+    /* colors */
+    background-color: rgba(13, 116, 23, 0.8);
+    color: #ffffff;
+  
+    /* shapes */
+    border-radius: 6px;
+    font-size: 1.5rem;
+    padding: 1.25rem;
+    margin:0; /* removing the margin on h1 tags means the header pins to the top if we move */
+    
+  }
+  .footer {
+    flex-shrink: 0;
+    padding: 1rem;
+    background-color: rgba(13, 116, 23, 0.8);
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+  }
+  .footer a:hover {
+    /* Hue, saturation, luminosity, alpha */
+    background-color: hsla(0, 0%, 90%, 0.15);
+    /* red, green, blue, alpha */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  /*
+  Form Styles
+  */
+  form input {
+      /* This is a hack to make sure our boxes line up with one another nicely */
+      width: 100%;
+      width: -moz-available;          /* WebKit-based browsers will ignore this. */
+      width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+      width: fill-available;
+  
+      /* here we are setting white space correctly */
+      margin-bottom: 1rem;
+      height: 2rem;
+      border-radius: 4px;
+    }
+  
+    form label {
+      width: 100%;
+      width: -moz-available;          /* WebKit-based browsers will ignore this. */
+      width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+      width: fill-available;
+      align-items: flex-start;
+  
+      display: block; /* this turns the label text into a box we can set margins on */
+      margin-bottom: 0.5rem;
+    }
+  
+  /* How To Write A Media Query For Small Screens */
+  
+  @media only screen and (max-width: 736px){
+      /* Rules in here will only apply when a screen is the correct size */
+      /* check it out by using your developer tools to shrink your screen-size */
+      .wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        flex: 1;
+    
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 5rem;
+      }
+      .left{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding-left:2.5rem;
+        padding-right:2.5rem;
+        padding-bottom:2.5rem;
+        padding-top: .5rem;
+        
+        width: fit-content;
+        
+        margin-top: 1rem;
+        border-style: dotted;
+      }
+      .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: fit-content;
+        padding-bottom:2.5rem;
+        padding-top: .5rem;
+        flex:1;
+        border-style: dotted;
+        margin-top: 1rem;
+       
+        
+  
+      }
+      .footer {
+        flex-shrink: 0;
+        padding: 1rem;
+        background-color: rgba(13, 116, 23, 0.8);
+        font-size: 1.2rem;
+        font-weight: 600;
+        position: absolute;
+        
+        width: 100%;
+        
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        
+      }
+      .header {
+    
+        top: 0; 
+        left: 0;
+        width: fit-content; 
+      }
+      
+      .header h1 {
+        display: block;
+        /* this will push other blocks out of the way */
+      
+        /* colors */
+        background-color: rgba(13, 116, 23, 0.8);
+        color: #ffffff;
+      
+        /* shapes */
+        border-radius: 6px;
+        font-size: 1.5rem;
+        padding: 1.25rem;
+        margin:0; /* removing the margin on h1 tags means the header pins to the top if we move */
+        text-align: center;
+        
+      }
+  }
